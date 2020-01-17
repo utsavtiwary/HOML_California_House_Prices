@@ -1,8 +1,10 @@
-#!/Users/utsavtiwary/ml/env/bin/python3.8
+#!/Users/utsavtiwary/Desktop/Repos/Hands-On-Machine-Learning-Exercises/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
+
 from jupyter_core.migrate import main
+
 if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
     sys.exit(main())
